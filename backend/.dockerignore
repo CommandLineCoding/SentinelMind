@@ -1,0 +1,28 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment files & Virtualenvs
+.venv/
+venv/
+ENV/
+.env
+.env.local
+
+# Git & Docker files
+.git
+.gitignore
+Dockerfile
+.dockerignore
+
+# IDE & OS clutter
+.vscode/
+.idea/
+.DS_Store
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
