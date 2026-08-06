@@ -1,4 +1,4 @@
-from typing import List
+
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -9,14 +9,14 @@ class Settings(BaseSettings):
     """
 
     # Server Settings
-    PROJECT_NAME: str = Field(default="Sentiel Mind", description="Application name")
+    PROJECT_NAME: str = Field(default="Sentil Mind", description="Application name")
     ENV: str = Field(default="development", description="Environment stage: development, testing, or production")
     DEBUG: bool = Field(default=True, description="Enable debug mode")
     HOST: str = Field(default="0.0.0.0", description="Backend server host")
     PORT: int = Field(default=8000, description="Backend server port")
 
     # CORS Configuration
-    CORS_ORIGINS: List[str] = Field(
+    CORS_ORIGINS: list[str] = Field(
         default=["http://localhost:5173", "http://localhost:3000"],
         description="Allowed CORS origin URLs for frontend access",
     )
